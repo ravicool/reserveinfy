@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.teju.reserveinfy">
+    <uses-sdk tools:overrideLibrary="android.support.v7.appcompat" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ReserveInfy"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SignUp"
+            android:label="@string/title_activity_sign_up">
+            <intent-filter>
+                <action android:name="com.example.teju.reserveinfy.SignUp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Home">
+            <intent-filter>
+                <action android:name="com.example.teju.reserveinfy.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Bus"
+            android:label="Reserve Bus">
+            <intent-filter>
+                <action android:name="com.example.teju.reserveinfy.Bus" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.teju.reserveinfy.MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".Sport"
+            android:label="Reserve Sport">
+            <intent-filter>
+                <action android:name="com.example.teju.reserveinfy.Sport" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.teju.reserveinfy.MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".Booking"
+            android:label="View Bookings">
+            <intent-filter>
+                <action android:name="com.example.teju.reserveinfy.Booking" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.teju.reserveinfy.MainActivity"/>
+        </activity>
+
+        <activity
+            android:name=".Help"
+            android:label="Help">
+            <intent-filter>
+                <action android:name="com.example.teju.reserveinfy.Help" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.example.teju.reserveinfy.MainActivity"/>
+        </activity>
+
+    </application>
+</manifest>

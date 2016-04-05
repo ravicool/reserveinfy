@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.teju.reserveinfy.SignUp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/darkblue">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/app_bar">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/employee_Id"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:hint="Employee ID" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/employee_Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:layout_below="@+id/employee_Id"
+        android:hint="Employee Name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/employee_Pass"
+        android:layout_below="@+id/employee_Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:hint="Password" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/employee_Mobile"
+        android:layout_below="@+id/employee_Pass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_below="@+id/employee_Mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Transport Card"
+            android:textAlignment="center"
+            android:singleLine="false"
+            android:textColor="#e5effc" />
+        <RadioGroup
+            android:id="@+id/transportRadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/employee_Mobile"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            style="@style/AppTheme">
+
+            <RadioButton
+                android:id="@+id/transportRadio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/transportRadio2"
+                android:layout_width="116dp"
+                android:layout_height="18dp"
+                android:text="No" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/transport_Id"
+        android:layout_below="@+id/linear1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Transport ID"
+        android:textAlignment="center"
+        android:inputType="number" />
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_below="@+id/transport_Id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="189dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Health Card"
+            android:textAlignment="center"
+            android:singleLine="false"
+            android:textColor="#e5effc"
+            android:autoText="true" />
+        <RadioGroup
+            android:id="@+id/healthRadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/employee_Mobile"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"
+            style="@style/AppTheme">
+
+            <RadioButton
+                android:id="@+id/healthRadio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/healthRadio2"
+                android:layout_width="116dp"
+                android:layout_height="18dp"
+                android:text="No" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/health_Id"
+        android:layout_below="@+id/linear2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Health ID"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:id="@+id/create_Account"
+        android:layout_below="@+id/health_Id"
+        android:layout_centerHorizontal="true"
+        android:textColor="#e5effc"
+        android:background="#3092b9" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

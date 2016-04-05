@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Reserve Infy</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="abouttext">
+        App Version : 1.0\n
+        Contact Us - Raviteja_Kuchana@infosys.com
+    </string>
+    <string name="terms">1. Introduction\n
+1.1 The Android Software Development Kit (referred to in the License Agreement as the SDK and specifically including the Android system files, packaged APIs, and Google APIs add-ons) is licensed to you subject to the terms of the License Agreement. The License Agreement forms a legally binding contract between you and Google in relation to your use of the SDK.
+\n
+</string>
+
+
+</resources>

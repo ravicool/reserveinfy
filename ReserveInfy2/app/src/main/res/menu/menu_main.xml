@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="200"
+        android:title="Help"
+        android:icon="@drawable/ic_help_white_24dp"
+        app:showAsAction="ifRoom" >
+
+    <menu>
+        <item android:id="@+id/action_helptopics"
+            android:title="Help Topics" />
+        <item android:id="@+id/action_submitfeedback"
+            android:title="Submit Feedback" />
+        <item android:id="@+id/action_report"
+            android:title="Report Problems" />
+        <item android:id="@+id/action_terms"
+            android:title="Terms and Conditions" />
+        <item android:id="@+id/action_about"
+            android:title="About" />
+    </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_user"
+        android:orderInCategory="100"
+        android:title="User"
+        android:icon="@drawable/ic_account_circle_white_24dp"
+        app:showAsAction="ifRoom">
+
+        <menu>
+                <item android:id="@+id/action_updateprofile"
+                    android:title="Update Profile" />
+
+                <item android:id="@+id/action_removeaccount"
+                    android:title="Remove Account" />
+
+                <item android:id="@+id/action_logout"
+                    android:title="Logout" />
+        </menu>
+    </item>
+</menu>
